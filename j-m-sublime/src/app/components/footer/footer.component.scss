@@ -1,0 +1,81 @@
+@import "../../utils/vars.scss";
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    position: relative;
+    bottom: 0;
+    background-color: $main-background;
+
+    @media($md){
+        height: 65px;
+    }
+
+    .footer-contact{
+        display: flex;
+
+        label{
+            font-family: $main-font;
+            font-size: 12px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.50;
+            letter-spacing: 1.40px;
+            text-align: center;
+            color: $main-text;
+            text-decoration: none;
+            cursor: pointer;
+
+            @media($md){
+                font-size: 16px;
+            }
+        }
+    }
+
+    .footer-socials {
+        display: flex;
+        flex-direction: column;
+
+        label{
+            font-family: $main-font;
+            font-size: 12px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.50;
+            letter-spacing: 1.40px;
+            text-align: center;
+            color: $main-text;
+            text-decoration: none;
+
+            @media($md){
+                font-size: 16px;
+            }
+        }
+
+        .social-icons-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 10px;
+
+            a{
+                margin-left: 10px;
+                margin-right: 10px; 
+
+                .social-icons {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+}
+
+.margins{
+    margin-right: 16px;
+    margin-left: 16px;
+}
+

@@ -1,0 +1,83 @@
+// Global units
+$px-breakpoint: 16;
+
+/* *************************Breakpoints***************************** */
+
+// Media queries aliases
+/*
+ Use like:
+ @media ($md) {
+     // Styles for tablets and above
+ }
+*/
+
+$xsmall: 320;
+$small: 576;
+$medium: 768;
+$large: 992;
+$xlarge: 1440;
+
+$breakpoint-xsmall: #{$xsmall / $px-breakpoint}em;
+$breakpoint-small: #{$small / $px-breakpoint}em;
+$breakpoint-medium: #{$medium / $px-breakpoint}em;
+$breakpoint-large: #{$large / $px-breakpoint}em;
+$breakpoint-xlarge: #{$xlarge / $px-breakpoint}em;
+
+$breakpoint-small-landscape: "orientation: landscape";
+
+$breakpoint-media-xsmall: "min-width: #{$breakpoint-xsmall}";
+$breakpoint-media-small: "min-width: #{$breakpoint-small}";
+$breakpoint-media-medium: "min-width: #{$breakpoint-medium}";
+$breakpoint-media-large: "min-width: #{$breakpoint-large}";
+$breakpoint-media-xlarge: "min-width: #{$breakpoint-xlarge}";
+
+$sm-landscape: $breakpoint-small-landscape;
+
+$xsm: $breakpoint-media-xsmall;
+$sm: $breakpoint-media-small;
+$md: $breakpoint-media-medium;
+$lg: $breakpoint-media-large;
+$xlg: $breakpoint-media-xlarge;
+
+/* **************************************************************** */
+
+/* *************************Colors***************************** */
+$main-text: #001524;
+$secondary-text: #ffffff;
+$tertiary-text: #96C0B7;
+
+$main-bars: #15616D;
+$secondary-bars: #725752;
+
+$main-background: #D4DFC7;
+
+$color-orange: #ec4b00;
+$color-orange-light: #ef770f;
+$color-leaseplan: #f18305;
+
+$color-track: #d8d8d8;
+$color-info: #f9f9f9;
+$color-proposal: #262626;
+$color-blue: #133c7c;
+$color-paragraph: #262626;
+$color-dark: #020202;
+
+/* **************************************************************** */
+
+/* ***************************Font****************************** */
+$main-font: "Montserrat";
+
+/* **************************************************************** */
+
+// Type
+
+// Spacing
+
+// Shadow
+
+// Opacity
+
+// Border radius
+
+
+

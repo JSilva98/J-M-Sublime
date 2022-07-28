@@ -1,1 +1,37 @@
+@import "../src/app/utils/vars.scss";
 /* You can add global styles to this file, and also import other style files */
+html {
+	background-color: #fafcfd;
+	font-family: $main-font;
+	z-index: 1;
+	width: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: $main-font;
+}
+
+h1,
+h2,
+h3,
+label,
+span,
+ul,
+li {
+	font-family: $main-font;
+}
+
+/* Padding Container For the Hole page */
+.padding-container {
+	padding: 10px 16px;
+
+	@media ($md) {
+		padding: 20px 26px;
+	}
+
+	@media ($lg) {
+		padding: 20px 76px;
+	}
+}
