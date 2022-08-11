@@ -1,4 +1,12 @@
 <div class="header-container">
     <a href="" class="header-links">Homepage</a>
     <a href="" class="header-links">Pagina 2</a>
+    <span class="form-inline">
+        <select name="" id="" class="form-control" #selectedLang (change)="switchLanguage(selectedLang.value)">
+            <option *ngFor="let language of translate.getLangs()" [value]="language" [selected]="language === translate.currentLang">
+                {{ language }}
+            </option>
+    
+        </select>
+    </span>
 </div>
